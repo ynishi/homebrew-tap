@@ -1,25 +1,25 @@
 class Mse < Formula
   desc "Command line interface for mlua-swarm (mse binary with serve / mcp subcommands)."
   homepage "https://github.com/ynishi/mlua-swarm"
-  version "0.4.1"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.4.1/mlua-swarm-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "469f7f8dd85be18f6969fec2a88ffa315809cd7b7cb0e6c5c714e5deb58b86c2"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.5.0/mlua-swarm-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "d1299284ace148b0b2c4d005d4c4a54c67d8c094717317b0a0aae482327b5f78"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.4.1/mlua-swarm-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "75b1ffd0163aa6617127804bc42436cb5f848abd3a98bc8a23832b7621f0ed37"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.5.0/mlua-swarm-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "6ae2c4a87ca0791d19aa644ec02e7aacc638dc7b3f3403e2374892011fc7ddda"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.4.1/mlua-swarm-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cdcb06759ddfae34384ad3a0883b0c25abf33cd05f4dcf1c4b320ed8fec2ae13"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.5.0/mlua-swarm-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f2fc1b21ef99a86edea1fab4c2c3d20b2e79f9e8baeb540fca7f93aa057259cf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.4.1/mlua-swarm-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "77aa45814a510a6f3f7290cd7678e2080be448f2b55a5e59509ecf0b9cac5167"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.5.0/mlua-swarm-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "dfd59d65856552f35a7f1396654552da0a0613f7eb563e950e1fc7497a229dcb"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
