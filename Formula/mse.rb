@@ -1,25 +1,25 @@
 class Mse < Formula
   desc "Command line interface for mlua-swarm (mse binary with serve / mcp subcommands)."
   homepage "https://github.com/ynishi/mlua-swarm"
-  version "0.9.2"
+  version "0.10.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.9.2/mlua-swarm-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "be32637d927eeb5305a279fdeda3b4632a409a63ea495a6fea1288e7e4512e42"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.10.0/mlua-swarm-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "fdbe767a11373342757ba1524c3542792651b65a78904e65bfba211b01f8eed6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.9.2/mlua-swarm-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3f8202d1d9e77a3412474290bf798ecfe0806c2adb79213c3046bf9d1d0e7ccd"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.10.0/mlua-swarm-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "4d2930bce4bd1ba5315ed324759a46f5b7a550fbb7a2ea1c478d71394cfac971"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.9.2/mlua-swarm-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e1d27e506f0bd8bb19c065f00a6bd89cc74339c8203070563e26e9c22164a03f"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.10.0/mlua-swarm-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a9833bd89e0c440cc666d98d523a743a51dc5ad0d0a330ca3c8f091c3c826bb9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.9.2/mlua-swarm-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bc75a3082f2d9174bcd713fdfb816ed4df2a5af70477048db0923282268168e8"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.10.0/mlua-swarm-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "eca320371ba2cd86e4a997a639071c8c5f036996173394cd920f038a09c59fa3"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
