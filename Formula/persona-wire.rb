@@ -1,25 +1,25 @@
 class PersonaWire < Formula
   desc "persona-wire unified CLI — clap-based bin dispatching subcommands (init / node / edge / spec / projection / wire-init / wire-close / mcp). The `mcp` subcommand boots the stdio MCP server (persona-wire-mcp lib)."
   homepage "https://github.com/ynishi/persona-wire"
-  version "0.14.4"
+  version "0.14.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.4/persona-wire-aarch64-apple-darwin.tar.xz"
-      sha256 "6550880d4730008c484d9f17c862e32a08b9dca13f40f9fd4156b5279f635b0d"
+      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.5/persona-wire-aarch64-apple-darwin.tar.xz"
+      sha256 "bacbdbed8a49a8d1665cbdaa9821eb49098b3a1e88bc1861aab635cd0223cda6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.4/persona-wire-x86_64-apple-darwin.tar.xz"
-      sha256 "1163003b4dc94ab430c295b62779ffc1a1fa3a0135630ee30b8dd097d4119988"
+      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.5/persona-wire-x86_64-apple-darwin.tar.xz"
+      sha256 "8922c61b49333dff8713150c079f486ca3c4bec7b980da8e72b327f574acb702"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.4/persona-wire-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d4d02d7eef03545528ce54079fb2cf15c4a07d15d0d4ae17cdbe1741426762be"
+      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.5/persona-wire-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "64c31a2ec32e69827895d5306a4170342be961fbd38fe5d650a86f90a78f3d61"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.4/persona-wire-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cbcbdc48b284baae9ad430b5a6171bbf3ff41d65bb0ddc3c00e158341167fd46"
+      url "https://github.com/ynishi/persona-wire/releases/download/v0.14.5/persona-wire-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "85b1403241a7d71de8549eeb80b1b04c3650f6cb71ad69b5f5fc8a71e0a3e655"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
