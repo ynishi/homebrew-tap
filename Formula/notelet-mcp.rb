@@ -1,25 +1,25 @@
 class NoteletMcp < Formula
   desc "Thin hosted Markdown note store for coding agents over MCP: Postgres, bearer auth, optimistic locking"
   homepage "https://github.com/ynishi/notelet"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/notelet/releases/download/v0.2.0/notelet-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "bb5139f0f9713393062928df1b6a06811453e4cdbdab026b3288b80a4d743b7a"
+      url "https://github.com/ynishi/notelet/releases/download/v0.3.0/notelet-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "828692150ffd5c5bf1fa4349b5e897892b2e70a577ebee8bbf90ac7eb1f6db57"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/notelet/releases/download/v0.2.0/notelet-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "a27cfeb1ad7f7b8a3f3e194a48bccd3acb2df7fc4edfba1383e8b64e319c5b65"
+      url "https://github.com/ynishi/notelet/releases/download/v0.3.0/notelet-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "b9a1b5b070295f65fecae0c7110d74969f358875b37adaa800c14c6d2ee028d6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/notelet/releases/download/v0.2.0/notelet-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "40389dec0f53dbf3752a76ec6a739fdde878efbb6c7a9471e90c816a5577a596"
+      url "https://github.com/ynishi/notelet/releases/download/v0.3.0/notelet-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d2d4804894acfb7e1e86ef752e00a129592ce034fcc411d2f61f8ac1ee5f5c59"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/notelet/releases/download/v0.2.0/notelet-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8f9211e2632fafd906e321757a27dbc9deb941d92c82eaf7d73995e722d0a7ee"
+      url "https://github.com/ynishi/notelet/releases/download/v0.3.0/notelet-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "657d7eac41c1cefa11c9e6f1deaa5180d1e67ca83077f6baa0809123840b14e6"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
