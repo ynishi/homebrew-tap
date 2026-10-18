@@ -1,25 +1,25 @@
 class Mse < Formula
   desc "Command line interface for mlua-swarm (mse binary with serve / mcp subcommands)."
   homepage "https://github.com/ynishi/mlua-swarm"
-  version "0.30.0"
+  version "0.31.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.30.0/mlua-swarm-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "4353b450eb3354175abaaa4e88ed17284422ecf16915730fa32cf8cfc2192d20"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.31.0/mlua-swarm-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "69c1f5393b094e431e469dfcc34a4e9db5c50eaf281ac74279c01ed5c6a7aee3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.30.0/mlua-swarm-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "1ce5cc9de05b4850acb5c00a73b17421c13ccd12e4682578cc70fe02a41e2322"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.31.0/mlua-swarm-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "60df7feb7d362f521f48ba72d4cf08e4d05be8a095b2dbf6789cab2fffd137a6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.30.0/mlua-swarm-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "afe0d2e49b34ab6035b1a2bbad7e57633cfd65da0e69a730fd9aea049fd00d8d"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.31.0/mlua-swarm-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "249777ef3bd3972ea490d18db01d202c7eb746c8537c04f0f7d631abb4d3d801"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.30.0/mlua-swarm-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b01788f5bc05fd442639e9caefcf0f05655f5b4f57371936f3a18e57661995c2"
+      url "https://github.com/ynishi/mlua-swarm/releases/download/v0.31.0/mlua-swarm-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5bda5ee5cb4a36bf8a58335f2837ebdba5bc0f4667e0d30f0f6afdb938ab6cca"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
