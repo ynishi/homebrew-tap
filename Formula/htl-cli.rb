@@ -1,25 +1,25 @@
 class HtlCli < Formula
   desc "htl command line (also `cargo htl`): check / run / test / fmt / build / pkg / new for Teal projects"
   homepage "https://github.com/ynishi/htl"
-  version "0.16.0"
+  version "0.17.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/htl/releases/download/v0.16.0/htl-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "0f10aa63dae7aefe26df6de71a27b0dbe7a6acb5e785f8a9beac61adc57ade46"
+      url "https://github.com/ynishi/htl/releases/download/v0.17.0/htl-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "31a426ddf67c45218b3a2b36e64e680425795dc240063a839794e19098f8274e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/htl/releases/download/v0.16.0/htl-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3dba72e7dcd8e5a0a3c49939872df92b3ed1fe7a2acc31a472542751d710bbba"
+      url "https://github.com/ynishi/htl/releases/download/v0.17.0/htl-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "685fa58a65bad9e1d305cf9da633472dce199b98ca8cf17c423276a4089c2b45"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ynishi/htl/releases/download/v0.16.0/htl-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "04778d4b4588507e6795f9229ef7a3e14f0d7cc305086c9e642080bcaaa1360e"
+      url "https://github.com/ynishi/htl/releases/download/v0.17.0/htl-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d3cbec91a10712e9d959a9da93dcf3ce7d477032ea74d90c2193fdefc2a97256"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynishi/htl/releases/download/v0.16.0/htl-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f28790246459cc34d1d387eedbc5c43db10bece85192fd148496516a0246c6db"
+      url "https://github.com/ynishi/htl/releases/download/v0.17.0/htl-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9d2a03d3efb9cb4b6715e0622428c745205d48a24f7d17a39b061adced4cb289"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
